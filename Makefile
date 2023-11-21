@@ -26,6 +26,13 @@ find-contours: geometric-transform
 glcm:
 	$(PYTHON) glcm.py --src $(GLCM_SRC_PATH) --xlsx $(GLCM_XLSX)
 
+glcm_new:
+	$(PYTHON) glcm.py --src ./data/circle_picture_original/trail1/ --xlsx $(N_DATA)/batch_01.xlsx
+	$(PYTHON) glcm.py --src ./data/circle_picture_original/trail2/ --xlsx $(N_DATA)/batch_02.xlsx
+	$(PYTHON) glcm.py --src ./data/circle_picture_original/trail3/ --xlsx $(N_DATA)/batch_03.xlsx
+
+
+
 # view computed tomography via dicom view
 computed-tomography:
 	$(PYTHON) jpg2dicom.py --src $(DICOM_SRC_PATH) --dst $(DICOM_DST_PATH)
@@ -37,3 +44,4 @@ train-model:
 
 clean:
 	-@$(RM) -r $(RESULT)
+ 

@@ -228,10 +228,10 @@ def store_row_data(sheet, datas, base_row, base_col):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--src',
-                        default='./data/ct-example/',
+                        default='./data/circle_picture_original/trail1/',
                         help='source image path')
     parser.add_argument('--xlsx',
-                        default='glcm.xlsx',
+                        default='test.xlsx',
                         help='xlsx filename')
     args = parser.parse_args()
 
@@ -250,7 +250,7 @@ if __name__ == '__main__':
         layer_list = sorted([i[1] for i in layer_list])
         layer_num = len(layer_list)
 
-        sheet = wb.create_sheet('item' + str(i))
+        sheet = wb.create_sheet('trail' + str(int((i/5)+1))+'_0'+str(int(i%5)+1))
         # store label
         store_row_data(sheet, const.layer_label + const.feature, 1, 1)
 

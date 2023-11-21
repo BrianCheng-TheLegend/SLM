@@ -1,5 +1,6 @@
 RESULT = ./result
 DATA = ./data
+N_DATA= ./new_data
 
 # the geometric transform files
 export GEOMETRIC_SRC_PATH ?= $(DATA)/melt/
@@ -12,8 +13,8 @@ export CONTOUR_DST_PATH ?= $(RESULT)/contour/
 export MASK_SRC_PATH ?= $(DATA)/recoat/
 export MASK_DST_PATH ?= $(RESULT)/mask/
 
-export GLCM_SRC_PATH ?= $(DATA)/ct-example/
-export GLCM_XLSX ?= glcm.xlsx
+export GLCM_SRC_PATH ?= $(DATA)/circle_picture_original/trail1/
+export GLCM_XLSX ?= $(N_DATA)/batch_01.xlsx
 
 export DICOM_SRC_PATH ?= $(DATA)/ct-example/item01/
 export DICOM_DST_PATH ?= $(RESULT)/dicom/
