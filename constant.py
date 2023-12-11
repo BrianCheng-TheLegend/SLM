@@ -29,12 +29,12 @@ svr_param = {'C': 1000,
              'gamma': 'auto'}
 
 # default train and test data
-bone_train_fp = ['./data/glcm-data/first_bone_train.xlsx',
-                 './data/glcm-data/second_bone_train.xlsx',
-                 './data/glcm-data/third_bone_train.xlsx']
-bone_test_fp = ['./data/glcm-data/first_bone_test.xlsx',
-                './data/glcm-data/second_bone_test.xlsx',
-                './data/glcm-data/third_bone_test.xlsx']
+# bone_train_fp = ['./data/glcm-data/first_bone_train.xlsx',
+#                  './data/glcm-data/second_bone_train.xlsx',
+#                  './data/glcm-data/third_bone_train.xlsx']
+# bone_test_fp = ['./data/glcm-data/first_bone_test.xlsx',
+#                 './data/glcm-data/second_bone_test.xlsx',
+#                 './data/glcm-data/third_bone_test.xlsx']
 ring_train_fp = ['./data/glcm-data/first_ring_train.xlsx',
                  './data/glcm-data/second_ring_train.xlsx',
                  './data/glcm-data/third_ring_train.xlsx']
